@@ -1,0 +1,44 @@
+package ex04controlstatement;
+
+public class E01If01
+{
+
+	public static void main(String[] args)
+	{
+
+		int num = 10;
+		/*
+		if(num%2) {
+			System.out.println("잘못된 조건식이다.");
+			
+		}
+		if(num) {
+			System.out.println("이것도 잘못되었다.");
+			
+		}
+		*/
+		if(num%2==0) {
+			System.out.println("이건 짝수= "+num);
+		}
+		if(num%2==0 && num>=10) {
+			System.out.printf("%n%d은 짝수이고 10보다 크거나 같다.%n%n", num);
+		}
+		if(true) {
+			System.out.println("무조건 실행됩니다.");
+		}
+		if(num%2 != 0) {
+			System.out.printf("%d는 홀수입니다.", num);
+		}
+		
+		if(num%2 ==0) {
+			System.out.printf("\n"+ num +"은 짝수입니다.");
+		}
+		if(num%2 !=0) {
+			System.out.println("num은"+ num + "입니다.");
+			
+		}else {
+			System.out.println(num+"은 홀수가 아닙니다.");
+		}
+	}
+
+}
