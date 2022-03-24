@@ -1,0 +1,85 @@
+package ex04controlstatement;
+
+import java.util.Scanner;
+
+import javax.swing.SwingConstants;
+
+public class E02Switch
+{
+
+	public static void main(String[] args)
+	{
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("숫자를 입력하세요");
+		int iNum = scanner.nextInt();
+		System.out.print("입력한 숫자는: "+iNum);
+		
+		int remain = iNum %3;
+		switch (remain)
+		{
+		case 0:
+			System.out.println("나머지는 0입니다.");
+			break;
+		case 1:
+			System.out.println("나머지는 1입니다.");
+			break;
+		default:
+			System.out.println("나머지는 2입니다.");
+			break;
+		}
+		
+		/*long ln = 100;
+		switch (ln)
+		{
+		case 100:
+			System.out.println("long타입 사용??");
+
+		default:
+			System.out.println("안되네요");
+			
+			
+			
+		}
+		
+		switch (iNum==%3==0)
+		{
+		case 100:
+			System.out.println("long타입도 안됨");
+		
+		default:
+			System.out.println("안되네");
+		}*/
+		String title = "자바";
+		
+		switch (title)
+		{
+		case "자바": System.out.println("자바");
+			
+			break;
+		case "JAVA": System.out.println("JAVA");
+		
+			break;
+		
+			
+		}
+		//이러느니 if 문 쓰지않나?
+		int season = 8;
+		switch (season){
+		case 3: case 4: case 5:
+			System.out.println("봄이에요");
+			break;
+		case 6: case 7: case 8:
+			System.out.println("여름입니다.");
+			break;
+		case 10:
+			System.out.println("가을입니다.");
+			break;
+		case 11: case 12: case 13:
+			System.out.println("겨울입니다.");
+			break;
+		}
+	
+	}
+
+}
