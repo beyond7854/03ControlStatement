@@ -8,19 +8,20 @@ public class dandan
 
 		int max =9;
 		int dan = 2;
-		int su = 1;
+		
 		while(dan<=max){
-			
-				if(max >= su) {
-					System.out.print(dan+ '*' + su +"="+ (dan*su));
+			int su = 1;
+				while(max >= su) {
+					System.out.print(dan+ "*" + su +"="+ (dan*su));
+					
+					System.out.print(" ");
+					su++;
 				}
-				else {
-					System.out.println(" ");
-				} su++;
+				System.out.println(" ");
 			
 				dan ++;
 			
-		} // 왜안됨?
+		} 
 	}
 
 }
