@@ -1,0 +1,26 @@
+package ex04controlstatement;
+
+public class dandan
+{
+
+	public static void main(String[] args)
+	{
+
+		int max =9;
+		int dan = 2;
+		int su = 1;
+		while(dan<=max){
+			
+				if(max >= su) {
+					System.out.print(dan+ '*' + su +"="+ (dan*su));
+				}
+				else {
+					System.out.println(" ");
+				} su++;
+			
+				dan ++;
+			
+		} // 왜안됨?
+	}
+
+}
