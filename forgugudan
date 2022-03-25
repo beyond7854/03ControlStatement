@@ -1,0 +1,54 @@
+package ex05method;
+
+import java.io.IOException;
+
+public class test2
+{
+
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("for문으로 제작한 구구단");
+		
+		for(int su=1; su<=9; su++) {
+			for(int dan=2; dan<=9; dan++) {
+				
+				System.out.printf("%-1d*%-1d=%-2d ", dan, su, (dan*su));
+			}
+		System.out.println( );
+		}
+
+		
+		for(int d =0; d <= 3; d++) {
+			for(int h=0; h <= 3; h++) {
+				
+				
+				if(d+h==3) {	//if 수식을 예제 (예제는5 지는 3 니가 3이면 3써야지 ㅂㅅ아) 
+			                   	//	ㅂㅅ그냥 따라가서 틀림 ㅂㅅ
+					System.out.print("1 ");
+				}else {
+					System.out.print("0 ");
+				}
+			
+			}	System.out.println();
+			
+			
+			
+		}
+		
+		/*
+		 연습문제 1-2 위 문제는 2단부터 9단까지행으로 출력하는 형태이다. 
+		 이번에는 열로 표현하시오
+		 */
+		
+//System.out.println("for문으로 제작한 구구단");
+//		
+//		for(int su=1; su<=9; su++) {
+//			for(int dan=2; dan<=9; dan++) {
+//				
+//				System.out.println(dan+"*"+su+"="+(dan*su));
+//			}
+//		System.out.println( );
+//		}
+	}
+
+}
