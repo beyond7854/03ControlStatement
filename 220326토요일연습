@@ -1,0 +1,157 @@
+package ex04controlstatement;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class readtest
+{
+
+	public static void main(String[] args) throws IOException
+	{
+		//숫자가 입력되면 1~5까지 찍는다 문자가 입력되면 6~9 까지
+//				System.out.println("숫자 입력");
+//				int ascii = System.in.read();
+//				System.out.println("입력한 문자의 아스키 코드값은"+ascii);
+//				
+//				
+//				if(ascii>='0' && ascii<='9') {
+//						
+//					System.out.printf("%2d, %2d, %2d, %2d, %2d", 1, 2, 3, 4, 5);
+//				}else {
+//					System.out.println("숫자가 아닙니다.");
+//				}
+					
+//				 시나리오] 숫자를 홀/짝인지 먼저 판단 한 후 
+//				 100 이상인지 판단하는 프로그램을 if~else문으로 
+//				 작성하시오.
+//				int num = 99;
+//				if (num%2==0 && num>=100) {
+//					System.out.printf("%d 짝수이고 100보다 큽니다..\n", num);
+//					
+//				}else if(num%2==1 && num<=100) {
+//					System.out.println(num+"은 100보다 작고 홀수 입니다.");
+//			
+//				}
+//				System.out.println("종료");
+//				
+				/*
+				 시나리오] 1~100까지 정수중 3의 배수이거나 4의배수인
+				 정수의 합을 구하는 프로그램을 while문을 이용해 작성하시오.
+				 
+				 */
+				
+//				int i = 4;
+//				int sum = 0;
+//				
+//				while(i<=100) {
+//					if(i%3==0 || i%4==0) {
+//						sum +=i;
+//						System.out.println(sum);
+//						
+//					}
+//					
+//					i++;
+//				
+//				}
+//				System.out.println("종료");
+				
+//				int dan = 2;
+//				while(dan <= 9) {
+//					int su = 1;
+//					while( su<=9 ) {
+//						
+//						System.out.printf("%-2d*%-2d=%-2d\n",su, dan, (su*dan));
+//						
+//						System.out.print(" ");
+//						su++;
+//					}
+//					System.out.println(" ");
+//					dan++;
+//				}
+//				System.out.println("종료");
+//				
+				/*
+				 시나리오] 아래와 같은 모양을 출력하는 while문 작성
+				 출력결과
+				 	1 0 0 0
+				 	0 1 0 0
+				 	0 0 1 0
+				 	0 0 0 1
+				 시나리오 완료 하지만 다른방식으로 만들어보라면 절대못할듯..
+				 본게 머리속에 있어서 그거 흐름따라 작성한것밖에안됨
+				 */
+				
+//				int x = 1;
+//				while(x<=4) {
+//					int y = 1;
+//					while(y<=4) {
+//						if(y==x) {
+//							
+//							System.out.print(1);
+//						}else {
+//							System.out.print(0);
+//							
+//						}
+//						y++;
+//						
+//					}
+//					System.out.println();
+//					x++;
+//				}
+				
+		
+		/*
+		 시나리오] 1부터 1000까지의 정수중 4의배수이거나
+		 7의배수인 수의 합을 구하여 출력하는 프로그램을 작성하시오
+		 단 do~while문을 사용해야 한다.
+//		 */
+//	
+//		int x = 1;
+//		int sum2 = 0;
+//	
+//		do {
+//			
+//			if(x%4==0 || x%7==0) {
+//					
+//			sum2 += x;
+//			}
+//			x++;
+//		}while(x<=1000);
+//		System.out.println(sum2);
+				
+		/*
+		 시나리오] 국어, 영어, 수학 점수를 사용자로부터 입력받은 후
+		 평균을 구해 A~F학점을 판단하여 출력하는 프로그램을 작성하시오.
+		 단, 사용자가 X,x(대소문자구분없음)를 입력하면 프로그램이
+		 종료되어야 하며 do~while문으로 구현해야한다.
+		 */
+		
+		int sum = 0;
+		int math = 33;
+		int eng = 44;
+		int kor = 55;
+		Scanner scanner = new Scanner(System.in);
+		scanner.nextInt();
+		System.out.println("국어");
+		do {
+			
+			sum = math + eng + kor;
+			double avg = sum/3.0;
+			
+			if(avg >=30) {
+				System.out.println("A");
+				
+			}
+			if(avg >=20) {
+				System.out.println("B");
+				
+			}
+			if(avg >=10) {
+				System.out.println("C");
+				
+			}
+		}while(scanner.nextLine(x));
+		
+	}
+
+}
